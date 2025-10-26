@@ -1,0 +1,23 @@
+{
+  "name": "todo-api-csv",
+  "version": "1.0.0",
+  "type": "module",
+  "main": "src/index.js",
+  "types": "module",
+  "scripts": {
+    "dev": "node --watch src/index.js",
+    "start": "NODE_ENV=production node src/index.js",
+    "migrate": "node src/config/migrate.js"
+  },
+  "dependencies": {
+    "csv-parse": "6.1.0",
+    "express": "5.1.0",
+    "multer": "2.0.2",
+    "uuid": "13.0.0",
+    "zod": "4.1.12",
+    "better-sqlite3": "12.4.1",
+    "morgan": "1.10.1",
+    "helmet": "8.1.0",
+    "cors": "2.8.5"
+  }
+}
